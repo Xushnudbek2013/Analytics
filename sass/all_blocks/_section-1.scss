@@ -1,0 +1,49 @@
+.section-1{
+    width: 100%;
+    margin-bottom: 100px;
+    &__title{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 46.88px;
+        text-align: center;
+        color: #172755;
+    }
+    &__text{
+        text-align: center;
+    }
+    &__card{
+        display: flex;
+        column-gap: 20px;
+        &__card-1{
+            width: 380px;
+            text-align: center;
+        }
+    }
+}
+@media (max-width: 835px) {
+    .section-1{
+        width: 100vw;
+        height: 100vh;
+        &__title{
+            text-align: left;
+        }
+        &__text{
+            text-align: left;
+        }
+        &__card{
+            margin-top: 50px;
+            display: block;
+            &__card-1{
+                text-align: left;
+                display: flex;
+            }
+        }
+    }
+    .section-1__card__card-1__img{
+        margin-right: 20px;
+    }
+}
+.section-1__card__card-1__img{
+    width: 60px;
+    height: 60px;
+}

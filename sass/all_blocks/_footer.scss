@@ -1,0 +1,76 @@
+footer{
+    background-color: #05257feb;
+    margin-top: 200px;
+}
+.footer-section{
+    width: 100%;
+    padding-top: 200px;
+    &__title{
+        color: $white-color;
+    }
+    &__text{
+        text-align: center;
+    }
+    &__cards{
+        display: flex;
+        column-gap: 80px;
+        &__card-1{
+            width: 340px;
+            text-align: center;
+            padding: 50px 61px 70px 59px;
+            background-color: #0F1F4B;
+            border-radius: 30px;
+            &__title{
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 35.16px;
+                color: $white-color;
+                margin-bottom: 10px;
+            }
+            &__text{
+                border-bottom: 1px solid #D3D9E9;
+            }
+            &__sub{
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 35.16px;
+                color: #D3D9E9;
+            }
+            &__dollar{
+                font-weight: 700;
+                font-size: 60px;                
+                line-height: 70.31px;
+                color: #D3D9E9;
+            }
+        }
+    }
+}
+.footer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 69px 0;
+    &__icons{
+        display: flex;
+        column-gap: 40px;
+        &__icon{
+            color: $white-color;
+            font-size: 30px;
+        }
+    }
+}
+@media (max-width: 835px) {
+    .footer-section{
+        &__cards{
+            display: block;
+            &__card-1{
+                margin-top: 50px;
+            }
+        }
+    }
+    .footer{
+        &__menu{
+            display: none;
+        }
+    }
+}
